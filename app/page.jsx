@@ -8,16 +8,18 @@ import Footer from "./components/Footer";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
 import MainImage from "./components/MainImage";
+import BespokeProcess from "./components/BespokeProcess";
 
 export default function HomePage() {
   //  const { setColorScheme, clearColorScheme } = useMantineColorScheme();
   return (
    <Container>
     <Stack gap="xl">
-        <SecondCTA />
-        <MainImage />
+      <SecondCTA />
+      <MainImage />
       <Hero />
       <Features />
+      <BespokeProcess />
       <VideoCard />
       <Contact />
       <Footer />

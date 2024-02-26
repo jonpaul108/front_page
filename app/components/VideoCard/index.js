@@ -23,7 +23,7 @@ export default function VideoCard() {
     },
   ];
   return (
-    <Stack>
+    <Stack pt={120} mb={ 120}>
       <Title
         order={2}
         c="var(--mantine-color-blue-6)"
