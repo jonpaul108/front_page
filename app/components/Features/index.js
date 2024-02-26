@@ -9,27 +9,39 @@ import {
   rem,
   useMantineTheme,
 } from "@mantine/core";
-import { IconGauge, IconUser, IconCookie } from "@tabler/icons-react";
+import {
+  IconGauge,
+  IconUser,
+  IconBrandDatabricks,
+  IconJumpRope,
+  IconBuilding,
+} from "@tabler/icons-react";
 import classes from "./styles.module.css";
 
 const mockdata = [
   {
-    title: "Extreme performance",
+    title: "Automations",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+      "Streamline client engagement and lead management with custom automations, from email responses to event registrations, leveraging Google Workspace and more.",
     icon: IconGauge,
   },
   {
-    title: "Privacy focused",
+    title: "Workflows",
     description:
-      "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
-    icon: IconUser,
+      "Enhance your business with efficient workflows that integrate seamlessly into your teams and sales processes, boosting productivity and accuracy.",
+    icon: IconJumpRope,
   },
   {
-    title: "No third parties",
+    title: "Data",
     description:
-      "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
-    icon: IconCookie,
+      "Simplify your data management with smart solutions for Google Sheets, ensuring accuracy, eliminating duplicates, and maintaining real-time inventory visibility.",
+    icon: IconBrandDatabricks,
+  },
+  {
+    title: "Custom Dev",
+    description:
+      "Our team of developers utilize their deep expertise to solve your unique business challenges - the possibilities are limitless.",
+    icon: IconBuilding,
   },
 ];
 
@@ -61,20 +73,31 @@ export default function FeaturesCards() {
     <Container size="lg" py="xl">
       <Group justify="center">
         <Badge variant="filled" size="lg">
-          Best company ever
+          Our Bespoke Solutions
         </Badge>
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        Integrate effortlessly with any technology stack
+        Solve your problems with our{" "}
+        <span
+          style={{
+            "background-color": "var(--mantine-color-blue-1)",
+            "border-radius": "5px",
+            padding: "5px",
+          }}
+        >
+          solutions
+        </span>
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Every once in a while, you’ll see a Golbat that’s missing some fangs.
-        This happens when hunger drives it to try biting a Steel-type Pokémon.
+      Burdened by time-consuming manual processes, disorganized workflows, and
+        unreliable data management? Many have been in your shoes. Explore how
+        our specialized automation and scripting solutions can revitalize your
+        operations, bringing efficiency and clarity to your small business.
       </Text>
 
-      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
+      <SimpleGrid cols={{ base: 1, md: 4 }} spacing={ {base:10, sm:"md"}} mt={50}>
         {features}
       </SimpleGrid>
     </Container>

@@ -16,17 +16,19 @@ import { background } from "@chakra-ui/react";
 
 export default function HeroBullets() {
   return (
-    <Container size="lg" className={classes.container}>
+    <Container size="md" className={classes.container}>
       <div className={classes.inner}>
         <div className={classes.content}>
-          <Title className={classes.title}>
-            Create <span className={classes.highlight}>efficient</span> React <br />{" "}
-            components library
+          <Title className={classes.title} order={2}>
+            Dispelling <span style={{ color:"var(--mantine-color-blue-6)"}}>Automation</span>{ " "}
+            Misconceptions
           </Title>
           <Text c="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever
-            – Mantine includes more than 120 customizable components and hooks
-            to cover you in any situation
+            In the realm of digital transformation, the notion that automation
+            and scripting are too intricate or not suited for individual
+            business requirements is a common hurdle. Our approach is designed
+            to debunk these myths, offering streamlined, customized automation
+            solutions that effortlessly meld with diverse business frameworks.
           </Text>
 
           <List
@@ -43,16 +45,13 @@ export default function HeroBullets() {
             }
           >
             <List.Item>
-              <b>TypeScript based</b> – build type safe applications, all
-              components and hooks export types
+              <b>Effortless Integration with Existing Systems</b>
             </List.Item>
             <List.Item>
-              <b>Free and open source</b> – all packages have MIT license, you
-              can use Mantine in any project
+              <b>Swift Implementation for Immediate Impact</b>
             </List.Item>
             <List.Item>
-              <b>No annoying focus ring</b> – focus ring will appear only when
-              user navigates with keyboard
+              <b>Continuous Support for Uninterrupted Success</b>
             </List.Item>
           </List>
 
@@ -66,7 +65,7 @@ export default function HeroBullets() {
               size="md"
               className={classes.control}
             >
-              Source code
+              Find Out More
             </Button>
           </Group>
         </div>

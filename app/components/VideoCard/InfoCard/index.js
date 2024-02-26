@@ -2,17 +2,16 @@ import { Text, Title, TextInput, Button, Image, Container, AspectRatio, Stack} f
 // import image from "./image.svg";
 import classes from "./styles.module.css";
 
-export default function WorkExample() {
+export default function WorkExample({ title, mid, description}) {
   return (
       <div className={classes.wrapper}>
         <div className={classes.body}>
-          <Title className={classes.title}>Wait a minute...</Title>
+        <Title className={classes.title}>{title}</Title>
           <Text fw={500} fz="lg" mb={5}>
-            Subscribe to our newsletter!
+          {mid}
           </Text>
           <Text fz="sm" c="dimmed">
-            You will never miss important product updates, latest news and
-            community QA sessions. Our newsletter is once a week, every Sunday.
+          { description }
           </Text>
 
     

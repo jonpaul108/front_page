@@ -13,19 +13,18 @@ export default function HeroText() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>
-          Automated AI{" "}
+        <Title className={classes.title} order={1}>
+          Driving Business Efficiency Through{" "}
           <Text component="span" className={classes.highlight} inherit>
-            code reviews
+            Tailored Automation
           </Text>{" "}
-          for any stack
         </Title>
 
         <Container p={0} size={600}>
           <Text size="lg" c="dimmed" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained
-            to detect lazy developers who do nothing and just complain on
-            Twitter.
+            Optimize your operations and seize every opportunity. Our tailored
+            automation solutions are designed to save you time, cut costs, and
+            attract more clients
           </Text>
         </Container>
 
@@ -36,10 +35,10 @@ export default function HeroText() {
             variant="default"
             color="gray"
           >
-            Book a demo
+            Find Out More
           </Button>
           <Button className={classes.control} size="lg">
-            Purchase a license
+            Get Started
           </Button>
         </div>
       </div>

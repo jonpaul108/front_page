@@ -7,17 +7,18 @@ import VideoCard from "./components/VideoCard";
 import Footer from "./components/Footer";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
+import MainImage from "./components/MainImage";
 
 export default function HomePage() {
   //  const { setColorScheme, clearColorScheme } = useMantineColorScheme();
   return (
    <Container>
-      
     <Stack gap="xl">
+        <SecondCTA />
+        <MainImage />
       <Hero />
-      <SecondCTA />
-      <VideoCard />
       <Features />
+      <VideoCard />
       <Contact />
       <Footer />
     </Stack>
@@ -25,9 +26,4 @@ export default function HomePage() {
   );
 }
 
-    // <Group>
-    //   <Button onClick={() => setColorScheme("light")}>Light</Button>
-    //   <Button onClick={() => setColorScheme("dark")}>Dark</Button>
-    //   <Button onClick={() => setColorScheme("auto")}>Auto</Button>
-    //   <Button onClick={clearColorScheme}>Clear</Button>
-    // </Group>;
+  
