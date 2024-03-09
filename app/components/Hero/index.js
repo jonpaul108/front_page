@@ -12,7 +12,6 @@ import {
 import { IconCheck } from "@tabler/icons-react";
 import img from "./img/img.png";
 import classes from "./styles.module.css";
-import { background } from "@chakra-ui/react";
 
 export default function HeroBullets() {
   return (

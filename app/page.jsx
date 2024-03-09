@@ -4,7 +4,6 @@ import { useMantineColorScheme, Button, Group, AspectRatio, Stack, Container } f
 import Hero from "./components/Hero";
 import SecondCTA from "./components/Secondary-CTA";
 import VideoCard from "./components/VideoCard";
-import Footer from "./components/Footer";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
 import MainImage from "./components/MainImage";
@@ -22,7 +21,6 @@ export default function HomePage() {
       <BespokeProcess />
       <VideoCard />
       <Contact />
-      <Footer />
     </Stack>
    </Container> 
   );
