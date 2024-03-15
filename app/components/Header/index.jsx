@@ -3,31 +3,36 @@ import { Menu, Group, Center, Burger, Container } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons-react";
 import { MantineLogo } from "@mantinex/mantine-logo";
+import Image from 'next/image';
 import classes from "./Header.module.css";
+import img from "./img/logo.png";
 
 const links = [
-  { link: "/about", label: "Features" },
   {
-    link: "#1",
-    label: "Learn",
-    links: [
-      { link: "/docs", label: "Documentation" },
-      { link: "/resources", label: "Resources" },
-      { link: "/community", label: "Community" },
-      { link: "/blog", label: "Blog" },
-    ],
+    link: "/", label: "Get Started"
   },
-  { link: "/about", label: "About" },
-  { link: "/pricing", label: "Pricing" },
-  {
-    link: "#2",
-    label: "Support",
-    links: [
-      { link: "/faq", label: "FAQ" },
-      { link: "/demo", label: "Book a demo" },
-      { link: "/forums", label: "Forums" },
-    ],
-  },
+  // { link: "/about", label: "Features" },
+  // {
+  //   link: "#1",
+  //   label: "Learn",
+  //   links: [
+  //     { link: "/docs", label: "Documentation" },
+  //     { link: "/resources", label: "Resources" },
+  //     { link: "/community", label: "Community" },
+  //     { link: "/blog", label: "Blog" },
+  //   ],
+  // },
+  // { link: "/about", label: "About" },
+  // { link: "/pricing", label: "Pricing" },
+  // {
+  //   link: "#2",
+  //   label: "Support",
+  //   links: [
+  //     { link: "/faq", label: "FAQ" },
+  //     { link: "/demo", label: "Book a demo" },
+  //     { link: "/forums", label: "Forums" },
+  //   ],
+  // },
 ];
 
 function Header() {
@@ -77,9 +82,14 @@ function Header() {
 
   return (
     <header className={classes.header}>
-      <Container size="md">
+      <Container size="xl">
         <div className={classes.inner}>
-          <MantineLogo size={28} />
+          <Image
+            src={img.src}
+            className={classes.image}
+            width={265}
+            height={50}
+          />
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>
